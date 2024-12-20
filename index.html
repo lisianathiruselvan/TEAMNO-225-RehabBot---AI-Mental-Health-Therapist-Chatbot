@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Support - RehabBot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</head>
+<body>
+
+  <!-- Splash Screen with Music -->
+  <div class="splash-screen">
+    <img src="Animation - 1730637886803.gif" alt="Logo" class="splash-logo">
+    <audio id="splashMusic" src="soundeffect.mp3" preload="auto"></audio>
+  </div>
+
+  <!-- Main Website Content -->
+  <div class="container" id="mainContent" style="display: none;">
+    <h1>Welcome to <span>RehabBot</span> - Your Mental Health Support</h1>
+    <p>We're here to provide support and guidance for your mental well-being.</p>
+    
+    <!-- Sleep Survey Button -->
+    <button id="sleepSurveyButton" class="main-button">Open Sleep Survey</button>
+
+    <!-- Dialogflow Messenger Integration -->
+    <df-messenger
+      intent="WELCOME"
+      chat-title="RehabBot"
+      agent-id="81692101-d0cc-4591-a41b-7f47585ca2ce"
+      language-code="en">
+    </df-messenger>
+
+    <!-- Sleep Survey Window -->
+    <div id="surveyWindow" class="survey-window" style="display: none;">
+      <h3>Sleep Survey</h3>
+      
+      <label for="sleepHours">How many hours did you sleep last night?</label>
+      <input type="number" id="sleepHours" min="0" max="24">
+
+      <label for="sleepQuality">Rate your sleep quality:</label>
+      <select id="sleepQuality">
+        <option value="Poor">Poor</option>
+        <option value="Fair">Fair</option>
+        <option value="Good">Good</option>
+        <option value="Excellent">Excellent</option>
+      </select>
+
+      <label for="sleepConsistency">How consistent was your sleep schedule?</label>
+      <select id="sleepConsistency">
+        <option value="Inconsistent">Inconsistent</option>
+        <option value="Somewhat Consistent">Somewhat Consistent</option>
+        <option value="Very Consistent">Very Consistent</option>
+      </select>
+
+      <label for="sleepStress">Did you feel stressed before sleeping?</label>
+      <select id="sleepStress">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <button id="submitSurvey" class="main-button">Submit Survey</button>
+      <button id="closeSurvey" class="secondary-button">Close</button>
+      <div id="sleepRatingOutput"></div>
+    </div>
+
+    <!-- Positive Affirmations Section -->
+    <div class="affirmations-section">
+      <h2>Affirmations For You <3</h2>
+      <div class="affirmation-cards">
+        <div class="card">
+          <img src="wal1.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal2.jpeg" alt="Affirmation 2">
+        </div>
+        <div class="card">
+          <img src="wal4.jpeg" alt="Affirmation 3">
+        </div>
+        <div class="card">
+          <img src="wal5.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal6.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal7.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal8.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal9.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal10.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal11.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal12.jpeg" alt="Affirmation 1">
+        </div>
+        <div class="card">
+          <img src="wal13.jpeg" alt="Affirmation 1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
