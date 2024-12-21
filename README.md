@@ -67,6 +67,10 @@ Language: HTML, CSS, JAVASCRIPT.
 
 **Performance and Accessibility**: RehabBot's integration of Google Dialogflow with HTML, CSS, and JavaScript ensures a smooth, responsive user experience with minimal lag or errors. Cross-browser compatibility was confirmed, and users appreciated the simplicity and clarity of the interface, which enhances accessibility.
 
+## DEMO
+
+https://github.com/user-attachments/assets/4a5e766f-351a-444d-9f11-89df3bb62f55
+
 ## REFERENCES
 
 [1] Pam, K. T., Nabizadeh, A., & Selek, S. (2022). Artificial Intelligence
